@@ -68,7 +68,7 @@ img {
 
 .main-header-links a, 
 .main-header-login a {
-	display: inline-block;
+	display: block;
 	vertical-align: top;
 	padding: 26px 20px;
 	color: #fff;
