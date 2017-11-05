@@ -5,4 +5,123 @@ html {
   box-sizing: inherit;
 }
 
-body {}
+body {
+	background: #070707 url(../img/bg-body.jpg) no-repeat 50% 0;
+	background-size: 1600px;
+	min-width: 960px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', 'Arial', 'Helvetica', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+	height: auto; 
+}
+
+.clearfix {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+	width:  940px;
+	margin: 0 auto;
+}
+
+.main-header {
+	background: #000;
+	min-height: 71px;
+	margin-bottom: 60px;
+}
+
+.main-header-links{
+	float: left;
+	width: 640px;
+}
+
+.main-header-links ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-header-links li {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.main-header-links a, 
+.main-header-login a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 26px 20px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.main-header-links a:hover, 
+.main-header-login a:hover {
+	background-color: #242424;
+}
+
+.main-header-links .active:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	left: 20px;
+	height: 4px;
+	background-color: #fff;
+}
+
+
+.main-header-login {
+	float: right;
+	max-width: 140px;
+	position: relative;
+}
+
+a.main-login-btn{
+	padding-left: 38px;
+}
+
+.main-login-btn:before {
+	content: "";
+	background: url(../img/login-ico.png) no-repeat 50% 50%;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -9px;
+	opacity: 0.3;
+}
+
+.main-login-btn:hover::before {
+	opacity: 1;
+}
+
+.main-logo {
+	width: 368px;
+	margin:  0 auto;
+}
