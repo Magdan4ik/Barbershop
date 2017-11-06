@@ -3,6 +3,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -37,9 +39,19 @@ img {
     clear: both;
 }
 
+.button {
+	display: inline-block;
+	padding: 12px 35px;
+	background-color: #000000;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+
 .container {
 	width:  940px;
 	margin: 0 auto;
+	outline: 1px solid red;
 }
 
 .main-header {
@@ -124,4 +136,103 @@ a.main-login-btn{
 .main-logo {
 	width: 368px;
 	margin:  0 auto;
+	margin-bottom: 25px;
 }
+
+.advantages {
+	margin-bottom: 80px;
+}
+
+.advatages-item {
+	float: left;
+	width: 300px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.advatages-item:last-child {
+	margin-right: 0;
+}
+
+.advatages-item h2 {
+	position: relative;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 42px;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+}
+
+.advatages-item h2:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	top: 62px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.advatages-item p {
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 10px;
+}
+
+.main-content {
+	width: 940px;
+	min-height: 420px;
+	background-color: #f4f1ee;
+	margin-bottom: 37px;
+	padding: 50px 80px;
+	color: #000;
+}
+
+.main-content h2 {
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.main-news {
+	margin-bottom: 25px;
+}
+
+.main-content p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.main-content time {
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: none;
+	font-weight: normal;
+}
+
+
+.main-content-left {
+	float: left;
+	width: 380px;
+}
+
+.main-content-right {
+	float: right;
+	width: 300px;
+}
+
+.main-content-right-gallery {
+	border: 7px solid #fff;
+	background-color: #e5e5e5;
+	width: 286px; 	
+	height: 164px;
+	overflow: hidden;
+}
+
+.main-content-right-gallery img {
+	object-fit: cover;
+}
+
