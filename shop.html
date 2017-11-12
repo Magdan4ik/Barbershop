@@ -14,8 +14,8 @@
 				<ul>
 					<li><a href="#info">Информация</a></li>
 					<li><a href="#news">Новости</a></li>
-					<li><a href="#price">Прайс-лист</a></li>
-					<li><a href="#shop" class="active">Магазин</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li><a href="shop.html" class="active">Магазин</a></li>
 					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
@@ -38,8 +38,56 @@
 
 			<div class="shop-container clearfix">
 				<div class="shop-container-left">
-					<h2 class="shop-filters">Производители</h2>
-					<h2 class="shop-filters">Группы товаров</h2>
+					<form action="#" method="post">
+						<h2 class="shop-filters-title">Производители</h2>
+						<label class="new-checkbox">
+							<input type="checkbox" name="checkbox" checked>
+							<span class="indicator"></span>
+							<span class="filter-name">Baxter of California</span>
+						</label>
+						<label class="new-checkbox">
+							<input type="checkbox" name="checkbox">
+							<span class="indicator"></span>
+							<span class="filter-name">Mr Natty</span>
+						</label>
+						<label class="new-checkbox">
+							<input type="checkbox" name="checkbox" checked>
+							<span class="indicator"></span>
+							<span class="filter-name">Suavecito</span>
+						</label></p>
+						<label class="new-checkbox">
+							<input type="checkbox" name="checkbox">
+							<span class="indicator"></span>
+							<span class="filter-name">Malin+Goetz</span>
+						</label>
+						<label class="new-checkbox">
+							<input type="checkbox" name="checkbox">
+							<span class="indicator"></span>
+							<span class="filter-name">Murray’s</span>
+						</label>
+						<label class="new-checkbox disabled">
+							<input type="checkbox" name="checkbox" disabled>
+							<span class="indicator"></span>
+							<span class="filter-name">American Crew</span>
+						</label>
+						<h2 class="shop-filters-title">Группы товаров</h2>
+							<label class="new-radio">
+								<input type="radio" name="radio" value="v1">
+								<span class="indicator"></span>
+								<span class="filter-name">Бритвенные принадлежности</span>
+							</label>
+							<label class="new-radio" value="v2">
+								<input type="radio" name="radio">
+								<span class="indicator"></span>
+								<span class="filter-name">Средства для ухода</span>
+							</label>
+							<label class="new-radio disabled" value="v2">
+								<input type="radio" name="radio" disabled>
+								<span class="indicator"></span>
+								<span class="filter-name">Аксессуары</span>
+							</label>
+							<button class="button" type="submit">Показать</button>
+					</form>
 				</div>
 				<div class="shop-container-right">
 					<div class="products-list clearfix">
@@ -147,9 +195,9 @@
 		<div class="container clearfix">
 			<address class="main-foooter-contact">
 				<p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
-				<p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+				<p>АДРЕС: Г. ВИННИЦА, УЛ. СОБОРНАЯ, 16</p>
 				<p><a href="#how-to-find-us" class="main-footer-contact-link">КАК НАС НАЙТИ?</a></p>
-				<p>ТЕЛЕФОН: <a href="tel:+74956660266">+7 (495) 666-02-66</p>
+				<p>ТЕЛЕФОН: <a href="tel:+74956660266">+38 (077) 77-777-77</p>
 			</address>
 			<section class="main-foooter-social">
 			<p>Давайте дружить!</p>

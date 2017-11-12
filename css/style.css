@@ -37,7 +37,7 @@ button {
 	cursor: pointer;
 }
 
-button[type="submit"] {
+button.full {
 	width: 100%;
 }
 
@@ -215,8 +215,10 @@ a.main-login-btn{
 	width: 940px;
 	min-height: 420px;
 	background-color: #f4f1ee;
-	padding: 50px 80px;
 	color: #000;
+	padding: 50px 80px;
+	margin-bottom: 50px;
+
 }
 
 .main-content:last-child {
@@ -604,10 +606,15 @@ a.soc-button:hover {
 	width: 700px;
 }
 
-.shop-filters {
+.shop-filters-title {
 	font-size: 24px;
 	line-height: 32px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.shop-filters-title:first-child {
+	margin-top: -5px;
 }
 
 .products-list {
@@ -697,6 +704,98 @@ a.soc-button:hover {
 .buy-button:hover, .buy-button:active {
 	background-color: #663d15;
 }
+
+
+.new-checkbox,
+.new-radio {
+	cursor: pointer;
+	display: block;
+	padding-bottom: 20px;
+}
+
+
+.new-checkbox:hover .filter-name,
+.new-radio:hover .filter-name{
+	color: #5d3f1e;
+	transition: color 0.3s;
+}
+
+
+.new-checkbox input:enabled,
+.new-checkbox input:disabled,
+.new-radio input:enabled,
+.new-radio input:disabled {                                         /*     Скрываем стандартный чекбокс       */
+	display: none;
+}
+
+
+
+.new-checkbox input:enabled + .indicator,
+.new-checkbox input:disabled + .indicator,
+.new-radio input:enabled + .indicator,
+.new-radio input:disabled + .indicator {                /*      Рисуем в indicator новый квадрат       */ 
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+	border: 2px solid #000;
+	clear: both;
+}
+
+.new-radio input:enabled + .indicator,
+.new-radio input:disabled + .indicator {
+	border-radius: 50%;
+}
+
+.new-checkbox input:checked + .indicator:before,
+.new-checkbox input:checked + .indicator:after  {     /*     Если checkbox checked, то перед indicator рисуем / и /     */ 
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	display: block;
+	width: 2px;
+	height: 10px;
+	background-color: #000;
+	transform: rotate(-45deg);
+}
+
+
+.new-checkbox input:checked + .indicator:after{      /*   и  переворачиваем вторую палочку \     */
+	transform: rotate(45deg);
+}
+
+
+.new-radio input:checked + .indicator:before {     /*     Если radio checked, то перед indicator рисуем черную точку     */ 
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+
+.disabled {
+	cursor: not-allowed!important;
+}
+
+.disabled .filter-name {
+	color: #acaba9!important;
+}
+
+.disabled .indicator,
+.disabled .indicator:before,
+.disabled .indicator:after {
+	border: 2px solid #acaba9!important;
+}
+
+
 
 .pagination {
 	list-style-type: none;
