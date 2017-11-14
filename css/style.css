@@ -9,7 +9,6 @@ html {
 
 body {
 	background: #070707 url(../img/bg-body.jpg) no-repeat 50% 0;
-	background-size: 1600px;
 	min-width: 960px;
 	color: #fff;
 	text-transform: uppercase;
@@ -831,3 +830,118 @@ a.soc-button:hover {
 	text-decoration: none;
 	line-height: 43px;
 }
+
+
+/* Single Item - Shop */
+
+.item-container {
+	margin-top: 55px;
+}
+
+.item-container-left {
+	float: left;
+	width: 460px;
+	margin-right: 90px;
+}
+
+.item-container-right {
+	float: right;
+	width: 390px;
+}
+
+.item-big-img img{
+	min-width: 460px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+.figure-miniature {
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+
+
+.item-small-img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+.item-small-img:last-child {
+	margin-right: 0;
+}
+
+
+.item-status-articul {
+	width: 100%;
+	margin: 10px 0 30px 0;
+}
+
+
+.item-status {
+	float: left;
+}
+
+.item-articul {
+	float: right;
+	color: #adadad;
+}
+
+.item-description {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 35px;
+	padding-right: 10px;
+}
+
+.item-price {
+	margin-bottom: 64px;
+}
+
+.price-summ {
+	background: #e4e4e4;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0 26px;
+	width: 109px;
+	line-height: 43px;
+}
+
+.item-include {
+	margin-bottom: 20px;
+}
+
+.include-title {
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 35px;
+}
+
+.include-list ul {
+	list-style-type: none;
+}
+
+.include-list li {
+	position: relative;
+	display: block;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.include-list li:after {
+	content: "";
+	position: absolute;
+	background: #000;
+	width: 8px;
+	height: 8px;
+	top: 50%;
+	left: 0;
+	margin-top: -4px;
+	transform: rotate(45deg);
+}
+
