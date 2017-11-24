@@ -52,10 +52,15 @@ input {
 input:focus {
 	border: 2px solid #663d15;
 }
+
 .clearfix {
     display: table;
     content: '';
     clear: both;
+}
+
+.v-hidden {
+	visibility: hidden;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
