@@ -60,7 +60,7 @@ input:focus {
 }
 
 .v-hidden {
-	visibility: hidden;
+	display: none;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
